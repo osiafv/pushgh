@@ -21,7 +21,7 @@ pushrepo(){
     git branch -m main
     git remote add origin https://github.com/osiafv/$foldername.git
     git push -u origin main
-    #git config --global --remove-section url."https://api:$token@github.com/"
+    git config --global --remove-section url."https://api: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@github.com/"
 }
 pushrepo1(){
     git config --global --remove-section user
