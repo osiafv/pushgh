@@ -13,7 +13,7 @@ pushrepo1(){
     git config --global user.email "skyzbott@gmail.com"
     git config --global user.password "Risky132"
     git config user.password "Risky132"
-    git config --global url.https://api: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@github.com/.insteadOf "https://github.com/"
+    git config --global url."https://api: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@github.com/".insteadOf "https://github.com/"
     git config --global credential.helper store
     git init
     git add .
