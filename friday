@@ -5,7 +5,7 @@
 foldername=$2
 commitmsg=$3
 
-pushrepo1(){
+pushrepo(){
     git config --global --remove-section user
     git config --global --remove-section credential
     git remote remove origin
@@ -13,7 +13,7 @@ pushrepo1(){
     git config --global user.email "skyzbott@gmail.com"
     git config --global user.password "Risky132"
     git config user.password "Risky132"
-    git config --global url."https://api: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@github.com/".insteadOf "https://github.com/"
+    git config --global url.https://api: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@github.com/@github.com/.insteadOf "https://github.com/"
     git config --global credential.helper store
     git init
     git add .
@@ -23,7 +23,7 @@ pushrepo1(){
     git push -u origin main
     #git config --global --remove-section url."https://api:$token@github.com/"
 }
-pushrepo(){
+pushrepo1(){
     git config --global --remove-section user
     git config --global --remove-section credential
     git remote remove origin
@@ -31,7 +31,7 @@ pushrepo(){
     git config --global user.email "skyzbott@gmail.com"
     git config --global user.password "Risky132"
     git config user.password "Risky132"
-    git config --global url.https://api:https://api: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@github.com/@github.com/.insteadOf "https://github.com/"
+    git config --global url."https://api:$token@github.com/".insteadOf "https://github.com/"
     git config --global credential.helper store
     git init
     git add .
